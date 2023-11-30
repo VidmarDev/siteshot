@@ -53,5 +53,17 @@ In the `settings.txt` file, you can customize various parameters for the screens
   ```ini
   filename_format = {domain}_{capture_size}
   ```
+  
+  **Fullscreen Screenshot:** Set to 'true' if you want to capture the entire webpage in a fullscreen screenshot.
+
+  ```ini
+  fullscreen_screenshot = false
+  ```
+  
+  **Create Base Folders:** Set to 'true' to create a folder for every domain, with screenshots of common screen sizes.
+
+  ```ini
+  create_base_folders = true
+  ```
 
 Feel free to adjust these settings based on your specific requirements.

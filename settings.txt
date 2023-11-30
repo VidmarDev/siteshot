@@ -1,8 +1,10 @@
 ; Specify parameters for the screenshot capture
 
 [Settings]
+
 ; Capture Size (e.g., "1920x1080")
-; Common values: "1920x1080" (Full HD), "1366x768" (Common laptop resolution), "750x1334" (iPhone 7 screen size) 
+; Common values: "1920x1080" (Full HD), "1366x768" (Common laptop resolution),
+; "750x1334" (iPhone 7 screen size)
 capture_size = 1920x1080
 
 ; Image Save Type (e.g., "png", "jpg")
@@ -12,7 +14,13 @@ image_save_type = png
 output_folder = screenshots
 
 ; Time to wait (in seconds) after the page has loaded before capturing the screenshot
-waiting_time = 3
+waiting_time = 5
 
 ; Filename format using placeholders: {domain}, {timestamp}, {capture_size}, {image_save_type}
 filename_format = {domain}_{capture_size}
+
+; Set 'fullscreen_screenshot' to 'true' if you want to capture the entire webpage in a fullscreen screenshot.
+fullscreen_screenshot = false
+
+; Creates a folder for every domain, with screenshots of common screen sizes.
+create_base_folders = true
